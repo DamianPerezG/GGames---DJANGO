@@ -1,0 +1,205 @@
+#Logo {
+    position: absolute;
+    left: 50%;
+    top: -100px;
+    height: 600px;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1500; 
+}
+
+.navbar {
+    position: fixed;
+    top: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: auto;
+    color: #757575;
+    z-index: 999;
+
+}
+.carousel-container {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    width: 100%;
+    background-image: url(../IMG/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.carousel-img {
+    max-height: 300px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+.navbar-container {
+    position: relative;
+    top: -850px;
+    right: 0px;
+}
+
+.container {
+    width: 100%;
+    padding: 60px 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    position: relative;
+    margin-top: 950px;
+}
+
+.container-box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+.container-box:nth-child(1) {
+    background-image: url(../IMG/horror-header.png);
+}
+
+.container-box:nth-child(2) {
+    background-image: url(../IMG/action-header.png);
+}
+
+.container-box:nth-child(3) {
+    background-image: url(../IMG/FreeWorld-header.png);
+}
+
+.container-box:nth-child(4) {
+    background-image: url(../IMG/FreeToPlay-header.png);
+}
+
+.container-box:nth-child(5) {
+    background-image: url(../IMG/Survival-header.png);
+}
+
+.container-box:nth-child(6) {
+    background-image: url(../IMG/Racing-header.png);
+}
+
+.container-box h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #000000;
+}
+
+
+
+
+/* Estilos generales */
+
+/* Estilos para tablet (pantallas medianas) */
+@media (max-width: 992px) {
+    #Logo {
+        height: auto;
+        max-width: 80%;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+    }
+
+    .navbar {
+        top: 20px;
+        width: 100%;
+        max-width: none;
+        left: 0;
+        transform: none;
+    }
+
+    .container {
+        padding: 40px 0;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .container-box {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .carousel-container {
+        top: 300px;
+        position: relative;
+    }
+
+    .gif {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+}
+
+
+/* Estilos para celular (pantallas pequeñas) */
+@media (max-width: 576px) {
+    #Logo {
+        height: auto;
+        max-width: 10%;
+        top: 20px;
+        left: 0; /* Ajustar la posición del logo a la izquierda */
+        transform: none; /
+        z-index: 1000;
+    }
+
+    .navbar {
+        top: 60px;
+        width: 100%;
+        max-width: none;
+        left: 0;
+        transform: none;
+        z-index: 1000;
+    }
+
+    .container {
+        padding: 20px 10px;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .container-box {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+    }
+
+    .carousel-container {
+        top: 300px;
+        position: relative;
+    }
+
+    .gif {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    .navbar-toggler {
+        z-index: 1500;
+    }
+}

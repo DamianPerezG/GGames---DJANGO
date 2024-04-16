@@ -1,0 +1,32 @@
+#mensajeBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 5cm;
+    height: 3cm;
+    text-align: center;
+    display: none;
+}
+
+#mensajeBox p {
+    margin: 0;
+}
+
+#mensajeBox button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mensajeBox button:hover {
+    background-color: #0056b3;
+}
