@@ -59,3 +59,12 @@ def create(request):
 
 def read(request):
     return render(request,'core/read.html')
+
+def update(request):
+    return render(request,'core/update.html')
+
+def delete(request):
+    return render(request,'core/delete.html')
+
+def carrito(request):
+    return render(request,'core/carrito.html')
