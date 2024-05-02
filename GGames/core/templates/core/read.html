@@ -28,9 +28,11 @@
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                    <th>Existencia</th>
+                    <th>Código</th>
                     <th>Nombre</th>
+                    <th>Categoría</th>
                     <th>Imagen</th>
+                    <th>Stock</th>
                     <th>Precio</th>
                     <th>Editar</th>
                     <th>Eliminar</th>
@@ -38,9 +40,11 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>1</td>
+                        <td>0501</td>
                         <td>UNCHARTED: A Thief's End</td>
+                        <td>Acción</td>
                         <td><img src="{% static 'core/img/uncharted4.png' %}" alt="Uncharted 4" class="img-thumbnail" width="100"></td>
+                        <td>5 unidades</td>
                         <td>29.990</td>
                         <td>
                             <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
@@ -52,6 +56,159 @@
                         </td>
                     </tr>
                     
+                    <tr>
+                        <td>0502</td>
+                        <td>Nier: Automata</td>
+                        <td>Acción</td>
+                        <td><img src="{% static 'core/img/NierAutomata.png' %}" alt="NierAutomata" class="img-thumbnail" width="100"></td>
+                        <td>5 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>0601</td>
+                        <td>Need for Speed: Heat</td>
+                        <td>Carreras</td>
+                        <td><img src="{% static 'core/img/NFSHeat.png' %}" alt="NFSHeat" class="img-thumbnail" width="100"></td>
+                        <td>6 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>0602</td>
+                        <td>Crash Team Racing: Nitro Fueled</td>
+                        <td>Carreras</td>
+                        <td><img src="{% static 'core/img/CTRNitro.png' %}" alt="CTRNitro" class="img-thumbnail" width="100"></td>
+                        <td>6 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+ 
+                    <tr>
+                        <td>0701</td>
+                        <td>The Legend of Zelda: Breath of the Wild</td>
+                        <td>Mundo Abierto</td>
+                        <td><img src="{% static 'core/img/ZeldaBOTW.png' %}" alt="ZeldaBOTW" class="img-thumbnail" width="100"></td>
+                        <td>6 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>0702</td>
+                        <td>Grand Theft Auto V</td>
+                        <td>Mundo Abierto</td>
+                        <td><img src="{% static 'core/img/GTAV.png' %}" alt="GTAV" class="img-thumbnail" width="100"></td>
+                        <td>6 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>0801</td>
+                        <td>Left 4 Dead 2</td>
+                        <td>Supervivencia</td>
+                        <td><img src="{% static 'core/img/left4dead2.png' %}" alt="left4dead2" class="img-thumbnail" width="100"></td>
+                        <td>6 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>0802</td>
+                        <td>State of Decay 2</td>
+                        <td>Supervivencia</td>
+                        <td><img src="{% static 'core/img/StateOfDecay.png' %}" alt="StateOfDecay" class="img-thumbnail" width="100"></td>
+                        <td>6 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>0901</td>
+                        <td>Silent Hill 2</td>
+                        <td>Terror</td>
+                        <td><img src="{% static 'core/img/SilentHill2.png' %}" alt="SilentHill2" class="img-thumbnail" width="100"></td>
+                        <td>6 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>0902</td>
+                        <td>Resident Evil 4 Remake</td>
+                        <td>Terror</td>
+                        <td><img src="{% static 'core/img/ResidentEvil4.png' %}" alt="ResidentEvil4" class="img-thumbnail" width="100"></td>
+                        <td>6 unidades</td>
+                        <td>29.990</td>
+                        <td>
+                            <a class="btn btn-warning" href="#">Editar <i class="fa fa-edit"></i></a>
+                        </td>
+                        <td>
+                            <form action="#" method="post">
+                                <button type="submit" class="btn btn-danger">Eliminar <i class="fa fa-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
