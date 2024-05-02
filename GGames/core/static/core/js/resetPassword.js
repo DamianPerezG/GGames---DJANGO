@@ -1,10 +1,8 @@
 function resetPassword() {
     var email = document.getElementById("email").value;
     if (email.trim() === "") {
-        alert("Por favor, ingresa tu correo electrónico.");
+        alert("Por favor, ingresa tu usuario.");
     } else {
-        alert("Se ha enviado un correo para restablecer tu contraseña a " + email);
-
-        window.location.href = "login.html";
+        alert("Se ha enviado un correo para restablecer tu contraseña a " + email)
     }
 }

@@ -1,12 +1,29 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login
 
 # Create your views here.
 def index(request):
     return render(request,'core/index.html')
 
-def login(request):
-    return render(request,'core/login.html')
+def login(request):  # Cambia el nombre de la vista aquí
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password = request.POST.get('pswd')
+        
+        # Autenticar al usuario con las credenciales proporcionadas
+        user = authenticate(request, username=email, password=password)
 
+        if user is not None:
+            # Si las credenciales son válidas, iniciar sesión para el usuario
+            login(request, user)
+            return redirect('/')  # Redirigir a la página principal o a donde sea necesario después del inicio de sesión
+        else:
+            # Si las credenciales son inválidas, mostrar un mensaje de error
+            context = {'error_message': 'Credenciales inválidas. Verifica tu email y contraseña.'}
+            return render(request, 'core/login.html', context)
+
+    return render(request, 'core/login.html')
+        
 def Signup(request):
     return render(request,'core/Signup.html')
 
@@ -36,3 +53,9 @@ def Supervivencia(request):
 
 def Terror(request):
     return render(request,'core/Terror.html')
+
+def create(request):
+    return render(request,'core/create.html')
+
+def read(request):
+    return render(request,'core/read.html')

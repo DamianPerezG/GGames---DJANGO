@@ -28,6 +28,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+ROLES = (
+    ('admin', 'Administrador'),
+    ('cliente', 'Cliente'),
+
+
+)
 
 # Application definition
 
@@ -56,7 +62,7 @@ ROOT_URLCONF = 'GGames.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'core', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'core', 'templates','core')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,11 +84,31 @@ WSGI_APPLICATION = 'GGames.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'xe',
+        'USER': 'C##admin',
+        'PASSWORD': 'admin123',
+        'TEST': {
+            'USER': 'default_test',
+            'TBLSPACE': 'default_test_tbls',
+            'TBLSPACE_TMP': 'default_test_tbls_tmp',
+        },
+    },
+    'other': {
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'xe',
+        'USER': 'C##cliente',
+        'PASSWORD': 'cliente123',
+        'TEST': {
+            'USER': 'other_test',
+            'TBLSPACE': 'other_test_tbls',
+            'TBLSPACE_TMP': 'other_test_tbls_tmp',
+        }
     }
 }
 
-
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',  # Utiliza el backend predeterminado de Django
+]
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
