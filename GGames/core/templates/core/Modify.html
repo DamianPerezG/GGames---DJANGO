@@ -30,8 +30,8 @@
         </nav>
     </div>
 
-    <div class="container">
-        <h2>Modificar Cuenta</h2>
+    <div id= "containerMod" class="container">
+        <h2 style="text-align: center;">Modificar Cuenta</h2>
         <form id="modificarCuentaForm" method="post"> 
             {% csrf_token %}
             <div class="form-group">
@@ -85,7 +85,7 @@
                 <label for="numCelular">Número de Celular:</label>
                 <input type="text" class="form-control" id="numCelular" name="numCelular">
             </div>
-            <button type="submit" class="btn btn-primary">Actualizar Datos</button>
+            <button id="act" type="submit" class="btn btn-primary">Actualizar Datos</button>
             <p id="mensajeBox" style="display: none;">
                 Datos Actualizados<br>
                 <button onclick="volverInicio()">Volver al Inicio</button>

@@ -13,7 +13,7 @@
 }
 
 .navbar {
-    position: fixed;
+    position: absolute;
     top: 400px;
     left: 50%;
     transform: translateX(-50%);
@@ -21,6 +21,7 @@
     max-width: auto;
     color: #757575;
     z-index: 999;
+    display: flex;
 
 }
 .carousel-container {

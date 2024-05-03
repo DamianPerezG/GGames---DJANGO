@@ -1,7 +1,7 @@
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import index, login, Signup, Modify, pago, forgot_password, Accion, Carreras, FreeToPlay, MundoAbierto, Supervivencia, Terror, create
+from .views import index, login, Signup, Modify, pago, forgot_password, Accion, Carreras, FreeToPlay, MundoAbierto, Supervivencia, Terror, carrito
 from django.contrib.auth import views as auth_views
 from . import views
 
@@ -21,7 +21,7 @@ urlpatterns = [
     path('Terror/', Terror, name="Terror"),
     path('read/', views.read, name= "Inventario"),
     path('create/', views.create, name= "IngresoInventario"),
-    path('update/', views.create, name= "UpdateInventario"),
-    path('update/', views.create, name= "DeleteInventario"),
-    path('carrito/', views.create, name= "CarritoCompra"),
+    path('update/', views.update, name= "UpdateInventario"),
+    path('dalete/', views.delete, name= "DeleteInventario"),
+    path('carrito/', carrito, name= "CarritoCompra"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
